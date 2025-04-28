@@ -1,28 +1,97 @@
-# DjangoCICD
+🚀 DjangoCICD Project
+Welcome to the DjangoCICD project!
+This project is a minimal Django application designed to demonstrate Continuous Integration and Continuous Deployment (CI/CD) using Jenkins, Docker, and AWS EC2.
 
-This is a sample Django project set up for practicing Continuous Integration and Continuous Deployment (CI/CD) with Jenkins.
+📂 Project Structure
+plaintext
+Copy
+Edit
+DjangoCICD/
+├── manage.py
+├── requirements.txt
+├── Dockerfile
+├── Jenkinsfile
+└── myproject/
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+🛠 Tech Stack
+Python 3.12
 
-## Project Overview
+Django 4.x
 
-- **Framework:** Django
-- **CI/CD Tool:** Jenkins
-- **Repository:** [GitHub Repo Link](https://github.com/Amitesh220/DjangoCICD)
+Django REST Framework
 
-## How to run the project
+Gunicorn
 
-```bash
-# Clone the repository
-git clone https://github.com/Amitesh220/DjangoCICD
+Docker
 
-# Navigate into the project directory
+Jenkins
+
+AWS EC2 (Ubuntu 24.04)
+
+⚙️ Setup Instructions
+1. Clone the repository
+bash
+Copy
+Edit
+git clone https://github.com/Amitesh220/DjangoCICD.git
 cd DjangoCICD
-
-# (Optional) Set up a virtual environment
+2. Create and Activate a Virtual Environment
+bash
+Copy
+Edit
+sudo apt install python3-venv
 python3 -m venv venv
 source venv/bin/activate
-
-# Install dependencies
+3. Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
+4. Run the Django Development Server
+bash
+Copy
+Edit
+python manage.py runserver 0.0.0.0:8000
+Access the app at: http://your-ec2-public-ip:8000
 
-# Run Django server
-python manage.py runserver
+🐳 Docker Instructions (Optional)
+You can also run this app inside a Docker container.
+
+Build the Docker Image
+bash
+Copy
+Edit
+docker build -t djangocicd-app .
+Run the Container
+bash
+Copy
+Edit
+docker run -d -p 8000:8000 djangocicd-app
+🔧 Jenkins CICD Setup
+Jenkins is configured with a Jenkinsfile in this repo.
+
+It will:
+
+Pull the latest code from GitHub
+
+Install Python dependencies
+
+Run Django migrations (if any)
+
+Start the server using Gunicorn
+
+🔥 Live Demo (Replace with your IP)
+http://54.172.229.65:8000
+
+📜 License
+This project is licensed under the MIT License.
+
+🙌 Acknowledgements
+Thanks to Django and Jenkins communities for awesome documentation.
+
+Hosted on AWS EC2.
+
+✨ Made with passion by Amitesh220
