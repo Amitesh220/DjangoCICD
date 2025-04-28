@@ -7,7 +7,15 @@ A simple yet powerful Django application built to demonstrate Continuous Integra
 
 ## 📂 Project Structure
 
-DjangoCICD/ ├── manage.py ├── requirements.txt ├── Dockerfile ├── Jenkinsfile └── myproject/ ├── init.py ├── settings.py ├── urls.py └── wsgi.py
+DjangoCICD/
+├── manage.py 
+├── requirements.txt 
+├── Dockerfile 
+├── Jenkinsfile
+└── myproject/├── init.py 
+              ├── settings.py 
+              ├── urls.py 
+└── wsgi.py
 
 yaml
 Copy
