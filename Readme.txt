@@ -1,9 +1,11 @@
+:
+
 🚀 DjangoCICD Project
 Welcome to the DjangoCICD project!
 This project is a minimal Django application designed to demonstrate Continuous Integration and Continuous Deployment (CI/CD) using Jenkins, Docker, and AWS EC2.
 
 📂 Project Structure
-plaintext
+markdown
 Copy
 Edit
 DjangoCICD/
