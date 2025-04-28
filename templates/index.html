@@ -2,20 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to DjangoCICD 🚀</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-dark text-light">
-
-<div class="container text-center py-5">
-  <h1 class="display-4">🚀 DjangoCICD Application</h1>
-  <p class="lead">Your lightweight Django app is up and running on AWS EC2!</p>
+  <title>🚀 Welcome to DjangoCICD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!-- Internal CSS -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
+    }
+
+    p.lead {
+      font-size: 1.5rem;
+      color: #d1d1d1;
+      margin-bottom: 40px;
+      animation: slideIn 1.5s ease;
+    }
+
+    .btn {
+      font-size: 1.2rem;
+      padding: 14px 30px;
+      border-radius: 50px;
+      transition: all 0.4s ease;
+      margin: 10px;
+      min-width: 180px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      border: none;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(100, 149, 237, 0.6);
+    }
+
+    .btn-outline-light {
+      border: 2px solid #fff;
+      color: #fff;
+      background: transparent;
+    }
+
+    .btn-outline-light:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-100px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff; }
+      to { text-shadow: 0 0 20px #0072ff, 0 0 30px #0072ff; }
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+  <h1>🚀 DjangoCICD Application</h1>
+  <p class="lead">Your lightweight Django app is up and running on AWS EC2!</p>
+
   <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
-    <a href="/admin/" class="btn btn-primary btn-lg px-4 gap-3">Go to Admin</a>
-    <a href="/api/status/" class="btn btn-outline-light btn-lg px-4">Check API Status</a>
+    <a href="/admin/" id="adminBtn" class="btn btn-primary">Go to Admin</a>
+    <a href="/api/status/" id="apiBtn" class="btn btn-outline-light">Check API Status</a>
   </div>
 </div>
+
+<!-- Internal JS for extra animation -->
+<script>
+  window.onload = function() {
+    const adminBtn = document.getElementById('adminBtn');
+    const apiBtn = document.getElementById('apiBtn');
+
+    setTimeout(() => {
+      adminBtn.style.transform = "translateY(0)";
+      adminBtn.style.opacity = 1;
+    }, 500);
+
+    setTimeout(() => {
+      apiBtn.style.transform = "translateY(0)";
+      apiBtn.style.opacity = 1;
+    }, 700);
+
+    // Initial hidden state
+    [adminBtn, apiBtn].forEach(btn => {
+      btn.style.transform = "translateY(30px)";
+      btn.style.opacity = 0;
+      btn.style.transition = "all 0.6s ease";
+    });
+  };
+</script>
 
 </body>
 </html>
