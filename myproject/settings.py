@@ -1,25 +1,19 @@
-"""
-Minimal Django settings.
-"""
+# Add this if not present
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-SECRET_KEY = 'dummysecretkey'
-
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
-
-INSTALLED_APPS = [
-    'django.contrib.staticfiles',
+# Template settings
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # <--- Add templates directory
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
 ]
-
-MIDDLEWARE = []
-
-ROOT_URLCONF = 'myproject.urls'
-
-WSGI_APPLICATION = 'myproject.wsgi.application'
-
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = '/static/'
