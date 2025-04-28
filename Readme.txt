@@ -1,92 +1,57 @@
-# 🚀 DjangoCICD Project
+# 🚀 Amitesh Mishra  
 
-Welcome to the **DjangoCICD** project!  
-This project is a minimal Django application designed to demonstrate **Continuous Integration and Continuous Deployment (CI/CD)** using **Jenkins**, **Docker**, and **AWS EC2**.
+## 👨‍💻 About Me  
 
----
-
-## 📂 Project Structure
-
-DjangoCICD/ ├── manage.py ├── requirements.txt ├── Dockerfile ├── Jenkinsfile └── myproject/ ├── init.py ├── settings.py ├── urls.py └── wsgi.py
-
-yaml
-Copy
-Edit
+Hello! I'm **Amitesh Mishra**, a passionate **Software Developer** specializing in **React** and **MERN stack development**. With a solid foundation in **C++ and Data Structures & Algorithms (DSA)**, I'm currently expanding my expertise in **DevOps** to enhance my software engineering capabilities.  
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Skills  
 
-- Python 3.12
-- Django 4.x
-- Django REST Framework
-- Gunicorn
-- Docker
-- Jenkins
-- AWS EC2 (Ubuntu 24.04)
+### 🔹 Programming Languages  
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)  
+![C++](https://img.shields.io/badge/C%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)  
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)  
+
+### 🔹 Frameworks & Libraries  
+![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)  
+![Node.js](https://img.shields.io/badge/Node.js-%23339933.svg?style=for-the-badge&logo=node.js&logoColor=white)  
+![Express.js](https://img.shields.io/badge/Express.js-%23000000.svg?style=for-the-badge&logo=express&logoColor=white)  
+![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
+![Firebase](https://img.shields.io/badge/Firebase-%23FFCA28.svg?style=for-the-badge&logo=firebase&logoColor=black)  
+
+### 🔹 Tools & Platforms  
+![Git](https://img.shields.io/badge/Git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)  
+![VS Code](https://img.shields.io/badge/VS%20Code-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
+![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)  
+![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white) *(Learning)*  
+
+### 🔹 Concepts  
+✅ **RESTful APIs**  
+✅ **Authentication & Authorization**  
+✅ **Agile Methodologies**  
 
 ---
 
-## ⚙️ Setup Instructions
+## 📌 Projects  
 
-### 1. Clone the repository
+- **🛍️ Amazon Clone** – A **React-based** e-commerce platform mimicking **Amazon's UI/UX**.  
+- **📸 Facial Recognition Attendance App** – Implemented with **Python, OpenCV, and Flask**.  
+- **🌐 Personal Portfolio** – Showcasing my projects and skills in **web development**.  
 
-```bash
-git clone https://github.com/Amitesh220/DjangoCICD.git
-cd DjangoCICD
-2. Create and Activate a Virtual Environment
-bash
-Copy
-Edit
-sudo apt install python3-venv
-python3 -m venv venv
-source venv/bin/activate
-3. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-4. Run the Django Development Server
-bash
-Copy
-Edit
-python manage.py runserver 0.0.0.0:8000
-Access the app at:
-👉 http://your-ec2-public-ip:8000
+---
 
-🐳 Docker Instructions 
-You can also run this app inside a Docker container:
+## 🎓 Education  
 
-Build the Docker Image
-bash
-Copy
-Edit
-docker build -t djangocicd-app .
-Run the Container
-bash
-Copy
-Edit
-docker run -d -p 8000:8000 djangocicd-app
-🔧 Jenkins CICD Setup
-Jenkins is configured using the Jenkinsfile in this repo.
-It will automatically:
+🎓 **Bachelor of Technology (B.Tech)** in **Electronics and Communication Engineering**  
+🏛 **Gautam Buddha University**  
 
-Pull the latest code from GitHub
+---
 
-Install Python dependencies
+## 📬 Contact Me  
 
-Run Django migrations (if any)
+📧 **Email:** [amiteshmishra2202@gmail.com](mailto:amiteshmishra2202@gmail.com)  
+🔗 **LinkedIn:** [Amitesh Mishra](https://www.linkedin.com/in/amitesh-mishra-19bb5a26b)  
 
-Start the server using Gunicorn
-
-🔥 Live Demo
-http://54.172.229.65:8000
-
-📜 License
-This project is licensed under the MIT License.
-
-🙌 Acknowledgements
-Thanks to the Django and Jenkins communities for amazing documentation and support.
-Project hosted on AWS EC2.
-
-✨ Made with passion by Amitesh220
+🚀 *Feel free to reach out for collaborations, project ideas, or just to connect!*  
