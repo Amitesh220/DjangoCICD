@@ -1,42 +1,37 @@
-
 # 🚀 DjangoCICD Project
-Welcome to the DjangoCICD project!
-This project is a minimal Django application designed to demonstrate Continuous Integration and Continuous Deployment (CI/CD) using Jenkins, Docker, and AWS EC2.
-                    
-# 📂 Project Structure
-markdown
+
+Welcome to the **DjangoCICD** project!  
+This project is a minimal Django application designed to demonstrate **Continuous Integration and Continuous Deployment (CI/CD)** using **Jenkins**, **Docker**, and **AWS EC2**.
+
+---
+
+## 📂 Project Structure
+
+DjangoCICD/ ├── manage.py ├── requirements.txt ├── Dockerfile ├── Jenkinsfile └── myproject/ ├── init.py ├── settings.py ├── urls.py └── wsgi.py
+
+yaml
 Copy
 Edit
-DjangoCICD/
-├── manage.py
-├── requirements.txt
-├── Dockerfile
-├── Jenkinsfile
-└── myproject/
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
-🛠 Tech Stack
-Python 3.12
 
-Django 4.x
+---
 
-Django REST Framework
+## 🛠 Tech Stack
 
-Gunicorn
+- Python 3.12
+- Django 4.x
+- Django REST Framework
+- Gunicorn
+- Docker
+- Jenkins
+- AWS EC2 (Ubuntu 24.04)
 
-Docker
+---
 
-Jenkins
+## ⚙️ Setup Instructions
 
-AWS EC2 (Ubuntu 24.04)
+### 1. Clone the repository
 
-⚙️ Setup Instructions
-1. Clone the repository
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/Amitesh220/DjangoCICD.git
 cd DjangoCICD
 2. Create and Activate a Virtual Environment
@@ -59,7 +54,7 @@ python manage.py runserver 0.0.0.0:8000
 Access the app at:
 👉 http://your-ec2-public-ip:8000
 
-🐳 Docker Instructions (Optional)
+🐳 Docker Instructions 
 You can also run this app inside a Docker container:
 
 Build the Docker Image
@@ -92,7 +87,6 @@ This project is licensed under the MIT License.
 
 🙌 Acknowledgements
 Thanks to the Django and Jenkins communities for amazing documentation and support.
-
 Project hosted on AWS EC2.
 
 ✨ Made with passion by Amitesh220
