@@ -1,41 +1,37 @@
 # 🚀 DjangoCICD Project
-Welcome to the DjangoCICD project!
-This project is a minimal Django application designed to demonstrate Continuous Integration and Continuous Deployment (CI/CD) using Jenkins, Docker, and AWS EC2.
 
-📂 Project Structure
-markdown
+Welcome to the **DjangoCICD** project!  
+A simple yet powerful Django application built to demonstrate Continuous Integration and Continuous Deployment (CI/CD) using **Jenkins**, **Docker**, and **AWS EC2**.
+
+---
+
+## 📂 Project Structure
+
+DjangoCICD/ ├── manage.py ├── requirements.txt ├── Dockerfile ├── Jenkinsfile └── myproject/ ├── init.py ├── settings.py ├── urls.py └── wsgi.py
+
+yaml
 Copy
 Edit
-DjangoCICD/
-├── manage.py
-├── requirements.txt
-├── Dockerfile
-├── Jenkinsfile
-└── myproject/
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
-🛠 Tech Stack
-Python 3.12
 
-Django 4.x
+---
 
-Django REST Framework
+## 🛠 Tech Stack
 
-Gunicorn
+- Python 3.12
+- Django 4.x
+- Django REST Framework
+- Gunicorn
+- Docker
+- Jenkins
+- AWS EC2 (Ubuntu 24.04)
 
-Docker
+---
 
-Jenkins
+## ⚙️ Setup Instructions
 
-AWS EC2 (Ubuntu 24.04)
+### 1. Clone the repository
 
-⚙️ Setup Instructions
-1. Clone the repository
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/Amitesh220/DjangoCICD.git
 cd DjangoCICD
 2. Create and Activate a Virtual Environment
@@ -55,8 +51,7 @@ bash
 Copy
 Edit
 python manage.py runserver 0.0.0.0:8000
-Access the app at:
-👉 http://your-ec2-public-ip:8000
+Access the app at 👉 http://your-ec2-public-ip:8000
 
 🐳 Docker Instructions (Optional)
 You can also run this app inside a Docker container:
@@ -72,7 +67,8 @@ Copy
 Edit
 docker run -d -p 8000:8000 djangocicd-app
 🔧 Jenkins CICD Setup
-Jenkins is configured using the Jenkinsfile in this repo.
+Jenkins is configured using the Jenkinsfile included in this repo.
+
 It will automatically:
 
 Pull the latest code from GitHub
@@ -84,7 +80,7 @@ Run Django migrations (if any)
 Start the server using Gunicorn
 
 🔥 Live Demo
-http://54.172.229.65:8000
+👉 http://54.172.229.65:8000
 
 📜 License
 This project is licensed under the MIT License.
@@ -94,4 +90,4 @@ Thanks to the Django and Jenkins communities for amazing documentation and suppo
 
 Project hosted on AWS EC2.
 
-✨ Made with passion by Amitesh220
+✨ Made with passion by Amitesh220.
