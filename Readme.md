@@ -51,9 +51,10 @@ bash
 Copy
 Edit
 python manage.py runserver 0.0.0.0:8000
-Access the app at 👉 http://your-ec2-public-ip:8000
+```
+# Access the app at 👉 http://your-ec2-public-ip:8000
 
-🐳 Docker Instructions (Optional)
+# 🐳 Docker Instructions 
 You can also run this app inside a Docker container:
 
 Build the Docker Image
@@ -66,7 +67,7 @@ bash
 Copy
 Edit
 docker run -d -p 8000:8000 djangocicd-app
-🔧 Jenkins CICD Setup
+# 🔧 Jenkins CICD Setup
 Jenkins is configured using the Jenkinsfile included in this repo.
 
 It will automatically:
@@ -79,15 +80,15 @@ Run Django migrations (if any)
 
 Start the server using Gunicorn
 
-🔥 Live Demo
-👉 http://54.172.229.65:8000
+# 🔥 Live Demo
+# 👉 http://54.172.229.65:8000
 
-📜 License
+# 📜 License
 This project is licensed under the MIT License.
 
-🙌 Acknowledgements
+# 🙌 Acknowledgements
 Thanks to the Django and Jenkins communities for amazing documentation and support.
 
-Project hosted on AWS EC2.
+ #Project hosted on AWS EC2.
 
-✨ Made with passion by Amitesh220.
+# ✨ Made with passion by Amitesh220.
