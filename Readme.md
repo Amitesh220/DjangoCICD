@@ -81,7 +81,7 @@ Run Django migrations (if any)
 Start the server using Gunicorn
 
 # 🔥 Live Demo
-# 👉 http://54.172.229.65:8000
+👉 http://54.172.229.65:8000
 
 # 📜 License
 This project is licensed under the MIT License.
