@@ -87,7 +87,9 @@ Install Python dependencies
 Run Django migrations (if any)
 
 Start the server using Gunicorn
-# RUN THIS AFTER BUILD : python3 manage.py runserver 0.0.0.0:8000
+      
+# RUN THIS AFTER BUILD : 
+👉 python3 manage.py runserver 0.0.0.0:8000
 
 # 🔥 Live Demo
 👉 http://54.172.229.65:8000
